@@ -1,5 +1,5 @@
 // ============================
-// Joe Butler Portfolio — script.js
+// Emaye Andrew Portfolio — script.js
 // Smooth scroll, active nav, animations, filtering, carousel, form validation, parallax
 // ============================
 
