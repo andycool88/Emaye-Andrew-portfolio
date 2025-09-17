@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="theme-color" content="#0f0f0f" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Portfolio of Joe Butler — Graphic Designer & Digital Marketer. View services, work, skills, testimonials, and contact." />
+  <meta name="keywords" content="Joe Butler, Graphic Designer, Digital Marketer, Portfolio, SEO, PPC, Social Media" />
+  <meta property="og:title" content="Joe Butler — Graphic Designer & Digital Marketer" />
+  <meta property="og:description" content="Modern portfolio with smooth animations and interactive elements." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+  <title>Joe Butler — Graphic Designer & Digital Marketer</title>
+  <link rel="preload" href="assets/img/portrait.svg" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Decorative, accessible skip link -->
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" aria-label="Primary">
+    <div class="brand">
+      <img src="assets/img/pico-logo.svg" width="36" height="36" alt="" role="presentation" />
+      <span class="brand-text">NATIVECODER</span>
+    </div>
+    <nav class="nav">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu" class="nav__list">
+        <li><a href="#home" data-nav>HOME</a></li>
+        <li><a href="#about" data-nav>ABOUT ME</a></li>
+        <li><a href="#services" data-nav>SERVICE</a></li>
+        <li><a href="#skills" data-nav>SKILLS</a></li>
+        <li><a href="#portfolio" data-nav>PORTFOLIO</a></li>
+        <li><a href="#testimonials" data-nav>FEEDBACK</a></li>
+        <li><a href="#blog" data-nav>OUR BLOG</a></li>
+        <li><a href="#contact" data-nav>CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <div class="socials">
+        <a aria-label="Twitter" href="#" class="socials__icon" title="Twitter">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0 0 22 5.92a8.19 8.19 0 0 1-2.36.65 4.12 4.12 0 0 0 1.8-2.27 8.23 8.23 0 0 1-2.61 1 4.11 4.11 0 0 0-7 3.75A11.66 11.66 0 0 1 3.15 4.9a4.11 4.11 0 0 0 1.27 5.49 4.08 4.08 0 0 1-1.86-.51v.05a4.11 4.11 0 0 0 3.29 4.03c-.46.12-.95.18-1.45.07a4.11 4.11 0 0 0 3.83 2.85A8.25 8.25 0 0 1 2 18.58 11.64 11.64 0 0 0 8.29 20"></path></svg>
+        </a>
+        <a aria-label="Dribbble" href="#" class="socials__icon" title="Dribbble">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.92 9.06a8.2 8.2 0 0 1-5.16.2c.25.63.47 1.3.66 2.01.26.95.44 1.93.56 2.93a8.2 8.2 0 0 1-2.98.56 8.2 8.2 0 0 1-7.16-4.17 20.7 20.7 0 0 1 6.3-2.58c-.28-.46-.59-.9-.94-1.32A20.6 20.6 0 0 1 6.6 5.1 8.2 8.2 0 0 1 12 3.8c1.9 0 3.64.65 5.02 1.73a20.7 20.7 0 0 1-2.36 2.48c.47.65.86 1.35 1.17 2.05a8.2 8.2 0 0 1 3.09-.01Z"></path></svg>
+        </a>
+        <a aria-label="LinkedIn" href="#" class="socials__icon" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 7.5H3.56V20h3.38V7.5ZM5.25 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm5.7 5H7.67V20h3.28v-6.28c0-1.65 1.22-2.07 1.7-2.07.49 0 1.88.16 1.88 2.07V20h3.27v-7.28c0-3.61-1.93-5.22-4.51-5.22-1.93 0-2.77.88-3.04 1.5h-.01V8.5Z"></path></svg>
+        </a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Emaye Andrew</p>
+    </div>
+  </aside>
+
+  <!-- Main content wrapper -->
+  <main class="main">
+    <!-- Background animated shapes -->
+    <div class="bg-shapes" aria-hidden="true">
+      <div class="shape shape--circle"></div>
+      <div class="shape shape--ring"></div>
+      <div class="shape shape--wave"></div>
+      <div class="shape shape--spark"></div>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="section hero" aria-label="Home">
+      <div class="hero__content container">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            <span class="eyebrow">HELLO, I'M EMAYE ANDREW</span>
+            A DEVOPS ENGINEER &amp; <span class="accent">CLOUD ENGINEER</span>
+          </h1>
+          <p class="hero__desc">
+            I combine <strong>infrastructure as code</strong>, <strong>CI/CD pipelines</strong>, and cloud technologies to help teams <strong>ship faster</strong> and more reliably.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="assets/Joe-Butler-CV.pdf" download>DOWNLOAD CV</a>
+            <button class="btn btn--ghost" data-video="https://example.com/intro.mp4" aria-label="Play intro video">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M8 5v14l11-7z"></path></svg>
+              PLAY VIDEO
+            </button>
+          </div>
+          <div class="hero__social">
+            <a href="#" aria-label="Instagram">@native_coder1</a>
+            <span>•</span>
+            <a href="#" aria-label="Email">g.emaye@live.com</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="portrait parallax">
+            <img src="assets/img/portrait.svg" alt="Joe Butler portrait, plaid shirt with white tee" width="480" height="560" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-label="About">
+      <div class="container grid two">
+        <div>
+          <h2 class="h2 fade-up">About Me</h2>
+          <p class="lead fade-up delay-1">
+            I design and implement automated workflows that make software delivery faster and more reliable. 
+  Through hands-on projects, I’ve built and deployed cloud-native applications, containerized services, 
+  and CI/CD pipelines that bring ideas to life in production-like environments.
+          </p>
+          <ul class="bullets fade-up delay-2">
+            <li>Cloud Infrastructure &amp; Automation (AWS, Docker, Kubernetes)</li>
+            <li>CI/CD Pipelines &amp; Deployment Strategies</li>
+            <li>Monitoring, Logging &amp; Performance Optimization</li>
+          </ul>
+          <a class="btn btn--secondary fade-up delay-3" href="#contact">Let’s Work Together</a>
+        </div>
+        <div class="stats fade-up delay-1">
+          <div class="stat">
+            <span class="stat__num">10+</span>
+            <span class="stat__label">Personal DevOps Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">5+</span>
+            <span class="stat__label">CI/CD Pipelines Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">2+</span>
+            <span class="stat__label">Cloud Platforms Explored (AWS,Azure)</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">Commitment to Learning &amp; Growth</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (Hex Grid) -->
+    <section id="services" class="section services" aria-label="Services">
+      <div class="container">
+        <h2 class="h2 center fade-up">What I Do</h2>
+        <div class="hex-grid fade-up delay-1" role="list">
+          <!-- center node -->
+          <!-- <div class="hex hex--center" role="listitem" aria-label="Core"> -->
+            <!-- <img src="assets/img/pico-logo.svg" alt="" width="36" height="36" /> -->
+          <!-- </div> -->
+          <!-- items -->
+          <button class="hex" role="listitem">
+            <div class="hex__inner">
+              <!-- <img src="assets/icons/social.svg" alt="" width="28" height="28" /> -->
+              <h4>Cloud Infrastructure</h4>
+              <p>Provisioning and managing resources on AWS</p>
+            </div>
+          </button>
+          <button class="hex" role="listitem">
+            <div class="hex__inner">
+              <!-- <img src="assets/icons/email.svg" alt="" width="28" height="28" /> -->
+              <h4>CI/CD Pipelines</h4>
+              <p>Automating builds, testing, and deployments using CodePipeline & Jenkins</p>
+            </div>
+          </button>
+          <button class="hex" role="listitem">
+            <div class="hex__inner">
+              <!-- <img src="assets/icons/design.svg" alt="" width="28" height="28" /> -->
+              <h4>Containerization</h4>
+              <p>Building and running apps with Docker & Kubernetes for scalability.</p>
+            </div>
+          </button>
+          <button class="hex" role="listitem">
+            <div class="hex__inner">
+              <!-- <img src="assets/icons/seo.svg" alt="" width="28" height="28" /> -->
+              <h4>Monitoring & Logging</h4>
+              <p>Using CloudWatch & Grafana to track system health and performance.</p>
+            </div>
+          </button>
+          <button class="hex" role="listitem">
+            <div class="hex__inner">
+              <!-- <img src="assets/icons/video.svg" alt="" width="28" height="28" /> -->
+              <h4>Automation</h4>
+              <p>Infrastructure as Code with Terraform & CloudFormation.</p>
+            </div>
+          </button>
+          <button class="hex" role="listitem">
+            <div class="hex__inner">
+              <!-- <img src="assets/icons/ppc.svg" alt="" width="28" height="28" /> -->
+              <h4>Cloud Security</h4>
+              <p>Best practices for IAM roles, policies, and securing cloud workloads.</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-label="Skills">
+      <div class="container">
+        <h2 class="h2 fade-up">Skills</h2>
+        <div class="skills-grid fade-up delay-1">
+          <div class="skill"><span>AWS Cloud (EC2, S3, IAM, RDS)</span><div class="bar"><b style="width:92%"></b></div></div>
+          <div class="skill"><span>CI/CD Pipelines (AWS CodePipeline, Jenkins)</span><div class="bar"><b style="width:88%"></b></div></div>
+          <div class="skill"><span>Docker & Containerization</span><div class="bar"><b style="width:84%"></b></div></div>
+          <div class="skill"><span>Kubernetes (EKS, Minikube)</span><div class="bar"><b style="width:80%"></b></div></div>
+          <div class="skill"><span>Infrastructure as Code (Terraform, CloudFormation)</span><div class="bar"><b style="width:86%"></b></div></div>
+          <div class="skill"><span>Monitoring & Logging (CloudWatch, Prometheus, Grafana)</span><div class="bar"><b style="width:82%"></b></div></div>
+          <div class="skill"><span>Version Control (Git & GitHub)</span><div class="bar"><b style="width:92%"></b></div></div>
+          <div class="skill"><span>React</span><div class="bar"><b style="width:84%"></b></div></div>
+          <div class="skill"><span>React Native</span><div class="bar"><b style="width:82%"></b></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section" aria-label="Portfolio">
+      <div class="container">
+        <div class="flex between v-center gap">
+          <h2 class="h2 fade-up">Selected Work</h2>
+          <div class="filters fade-up delay-1" role="tablist" aria-label="Portfolio filters">
+            <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="chip" data-filter="video" role="tab">Video</button>
+            <button class="chip" data-filter="seo" role="tab">SEO</button>
+            <button class="chip" data-filter="ppc" role="tab">PPC</button>
+            <button class="chip" data-filter="design" role="tab">Design</button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid fade-up delay-2">
+          <article class="card" data-cat="video">
+            <img loading="lazy" src="assets/img/folio-1.svg" alt="Video marketing project" />
+            <div class="card__overlay">
+              <h3>Captivate, Engage, Convert: My Video Marketing Mastery</h3>
+            </div>
+          </article>
+          <article class="card" data-cat="seo">
+            <img loading="lazy" src="assets/img/folio-2.svg" alt="SEO project" />
+            <div class="card__overlay">
+              <h3>Organic Growth: Of My SEO Marketing Achievements</h3>
+            </div>
+          </article>
+          <article class="card" data-cat="ppc">
+            <img loading="lazy" src="assets/img/folio-3.svg" alt="PPC project" />
+            <div class="card__overlay">
+              <h3>Winning Click Strategies: My Best PPC Marketing Victories</h3>
+            </div>
+          </article>
+          <article class="card" data-cat="video">
+            <img loading="lazy" src="assets/img/folio-4.svg" alt="Video series" />
+            <div class="card__overlay">
+              <h3>From Concept to Clicks: My Best Video Marketing Odyssey</h3>
+            </div>
+          </article>
+          <article class="card" data-cat="design">
+            <img loading="lazy" src="assets/img/folio-5.svg" alt="Branding & design" />
+            <div class="card__overlay">
+              <h3>Bold Branding Systems for Startups</h3>
+            </div>
+          </article>
+          <article class="card" data-cat="design">
+            <img loading="lazy" src="assets/img/folio-6.svg" alt="Packaging design" />
+            <div class="card__overlay">
+              <h3>Packaging that Pops on Shelves</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials" aria-label="Testimonials">
+      <div class="container">
+        <h2 class="h2 center fade-up">HAPPY WORDS FROM CUSTOMERS</h2>
+
+        <div class="carousel fade-up delay-1" aria-roledescription="carousel">
+          <button class="carousel__btn prev" aria-label="Previous testimonial">‹</button>
+          <div class="carousel__track" role="group" aria-live="polite">
+            <figure class="tcard in-view">
+              <img src="assets/img/client-1.svg" alt="Client portrait" width="72" height="72" />
+              <blockquote>“Joe elevated our brand and tripled our conversion rate in one quarter.”</blockquote>
+              <figcaption>— Maya R., VP Marketing, FintechCo</figcaption>
+            </figure>
+            <figure class="tcard">
+              <img src="assets/img/client-2.svg" alt="Client portrait" width="72" height="72" />
+              <blockquote>“His design sense is sharp and his marketing chops are rare.”</blockquote>
+              <figcaption>— Ahmed L., Founder, UrbanFoods</figcaption>
+            </figure>
+            <figure class="tcard">
+              <img src="assets/img/client-3.svg" alt="Client portrait" width="72" height="72" />
+              <blockquote>“From SEO to video, everything worked in sync. Stellar results.”</blockquote>
+              <figcaption>— Chioma A., Growth Lead, HealthPlus</figcaption>
+            </figure>
+          </div>
+          <button class="carousel__btn next" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="section" aria-label="Blog">
+      <div class="container">
+        <h2 class="h2 fade-up">Our Blog</h2>
+        <div class="blog-grid fade-up delay-1">
+          <article class="blog-card">
+            <h3>Designing for Conversions in 2025</h3>
+            <p>How motion, color, and narrative shape attention — and what that means for your funnel.</p>
+            <a class="text-link" href="#">Read more</a>
+          </article>
+          <article class="blog-card">
+            <h3>SEO vs. PPC: Where to Invest</h3>
+            <p>Short-term wins, long-term gains, and the sweet spot between them.</p>
+            <a class="text-link" href="#">Read more</a>
+          </article>
+          <article class="blog-card">
+            <h3>Short-Form Video: 7 Playbooks</h3>
+            <p>Turning views into action across TikTok, Reels, and Shorts.</p>
+            <a class="text-link" href="#">Read more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" aria-label="Contact">
+      <div class="container grid two">
+        <div>
+          <h2 class="h2 fade-up">Let's Build Something</h2>
+          <p class="lead fade-up delay-1">Tell me about your goals. I’ll reply within 24 hours.</p>
+          <ul class="bullets fade-up delay-2">
+            <li>Based in Lagos • Open to remote</li>
+            <li>Prefer WhatsApp or email</li>
+            <li>Available for retainers &amp; projects</li>
+          </ul>
+        </div>
+        <form id="contactForm" class="form fade-up delay-1" novalidate>
+          <div class="form__row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="form__row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="What are we building?" required></textarea>
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <button class="btn btn--primary" type="submit">Send Message</button>
+          <p id="formStatus" class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year2"></span> Emaye Andrew. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="video-modal" hidden role="dialog" aria-modal="true" aria-label="Intro video">
+    <div class="video-modal__backdrop" data-close></div>
+    <div class="video-modal__content">
+      <button class="video-modal__close" aria-label="Close video" data-close>×</button>
+      <video controls preload="none"></video>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
